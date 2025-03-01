@@ -39,7 +39,10 @@ with open('tfidf_vectorizer.pkl', 'rb') as f:
 # Define label mapping dictionary (use the same mapping from training)
 label_mapping = {0: "negative", 1: "neutral", 2: "positive"}
 
-# Streamlit UI
+# Streamlit UI with logo
+st.set_page_config(page_title="Sentiment Classifier", page_icon="🤖")
+st.image("https://images.squarespace-cdn.com/content/v1/5b1cc0f95b409bd4bfc3b316/a5b16393-7980-4405-8d10-2ad7c97e5b1f/pexels-anel-rossouw-2558605.jpg?format=2500w", use_column_width=True)
+
 st.title("Multiclass Sentiment Classification")
 
 user_input = st.text_area("Enter text to classify")
