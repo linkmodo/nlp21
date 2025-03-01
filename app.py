@@ -45,11 +45,11 @@ st.image("https://myhotposters.com/cdn/shop/products/mNS0022_1024x1024.jpeg?v=15
 
 st.markdown("---")
 
-st.title("Multiclass Sentiment Classification")
+st.title("Multiclass Sentiment Classification Prediction Model")
 
-user_input = st.text_area("Enter a sentence to classify")
+user_input = st.text_area("Please enter a sentence to classify.")
 
-if st.button("Predict"):
+if st.button("Predict!"):
     processed = preprocess_text(user_input)
     vectorized = tfidf.transform([processed])
     prediction_encoded = model.predict(vectorized)[0]  # Get numerical prediction
@@ -64,4 +64,4 @@ if st.button("Predict"):
 
 # Credit section
 st.markdown("---")
-st.markdown("**Built by Li Fan, 2025-02-28**")
+st.markdown("**Build by Li Fan, 2025-02-28**")
