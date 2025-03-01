@@ -43,8 +43,6 @@ label_mapping = {0: "negative", 1: "neutral", 2: "positive"}
 st.set_page_config(page_title="Sentiment Classifier", page_icon="🤖")
 st.image("https://myhotposters.com/cdn/shop/products/mNS0022_1024x1024.jpeg?v=1571444033", use_container_width=True)
 
-st.markdown("---")
-
 st.title("Multiclass Sentiment Classification Prediction Model")
 
 user_input = st.text_area("Please enter a sentence to classify.")
